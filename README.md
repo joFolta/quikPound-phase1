@@ -12,14 +12,18 @@
 
 - To allow the unique MongoDB ID's to be targeted, use ```var ObjectId = require('mongodb').ObjectID```
 - Alternate **Querying**/**Parameter** Syntax for GET (READ):
-    1) ```app.get('/posts/:post_id', function...
+    1)```
+      app.get('/posts/:post_id', function...
       var uId = ObjectId(req.params.post_id)
-      // uId = 5819d9asd83818```
+      // uId = 5819d9asd83818
+      ```
       URL: http://localhost:8080/posts/5819d9asd83818
 
-    2) ```app.get('/posts', function...)
+    2)```
+      app.get('/posts', function...)
       var uId = ObjectId(req.params.post_id)
-      // uId = 5819d9asd83818```
+      // uId = 5819d9asd83818
+      ```
       URL: http://localhost:8080/posts?id=5819d9asd83818
 
 ## Technologies Used:
