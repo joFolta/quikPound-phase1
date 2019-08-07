@@ -18,14 +18,16 @@
       app.get('/posts/:post_id', function...
       var uId = ObjectId(req.params.post_id)
       // uId = 5819d9asd83818
+      )
       ```
       URL: http://localhost:8080/posts/5819d9asd83818
 
     2)
       ```
-      app.get('/posts', function...)
+      app.get('/posts', function...
       var uId = ObjectId(req.params.post_id)
       // uId = 5819d9asd83818
+      )
       ```
       URL: http://localhost:8080/posts?id=5819d9asd83818
 
