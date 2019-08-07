@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: WorkSans-Black
+font link: https://fonts.google.com/specimen/Work+Sans
+font author: Wei Huang
+font author site: 
+Slogan Font: Renner-Thin.otf
+
+icon designer: Joseph Augustine
+icon designer link: /josephthuruthel
+        
+{"bg":"#81AAD9","icon":"#F2CCB1","font":"#ffffff","slogan":"#ffffff"}
+      

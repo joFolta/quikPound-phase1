@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>QuikPound</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="page-header text-center">
+      <h1><span class="fa fa-anchor"></span> Profile Page</h1>
+      <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+    <div class="row">
+
+      <!-- LOCAL INFORMATION -->
+      <div class="col-sm-6">
+        <div class="well">
+          <h3><span class="fa fa-user"></span> <%= user.local.username %></h3>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <h2>Add a message</h2>
+        <% if (user.local.email) { %>
+        <form action="/posts" method="POST">
+          <input type="text" value="Text For Posts" name="postText">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <% } %>
+
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <ul>
+          <% for(var i=0; i<posts.length; i++) {%>
+          <li class="message">
+            <a href="/posts/<%= posts[i]._id %>">
+              <span><%= posts[i]._id %></span>
+              <span><%= posts[i].username %></span>
+              <span><%= posts[i].postText %></span>
+            </a>
+          </li>
+          <% } %>
+        </ul>
+
+      </div>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>QuikPound</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+
+    <div class="row">
+      <div class="col-sm-6">
+        <ul>
+          <% for(var i=0; i<posts.length; i++) {%>
+          <li class="message">
+              <span><%= posts[i].username %></span>
+              <span><%= posts[i].postText %></span>
+          </li>
+          <% } %>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
