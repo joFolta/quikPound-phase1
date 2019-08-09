@@ -13,7 +13,8 @@
 - To allow the unique MongoDB ID's to be targeted, use ```var ObjectId = require('mongodb').ObjectID```
 - Alternate **Parameters**/**Queries** Syntax for GET (READ):
 
-    1) PARAMETER (token is what follows ":")
+    1)
+    PARAMETER (token is what follows ":")
 
       ```
       app.get('/posts/:post_id', function...
@@ -23,8 +24,9 @@
       ```
       URL: http://localhost:8080/posts/5819d9asd83818
 
-    2) QUERY (has query strings; more than one is ok using "&")
-    
+    2)
+    QUERY (has query strings; more than one is ok using "&")
+
       ```
       app.get('/posts', function...
       var uId = ObjectId(req.query.post_id)
