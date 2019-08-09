@@ -46,9 +46,9 @@ module.exports = function(app, passport, db, ObjectId) {
     // console.log("req",req)
     // console.log("req.params.post_id",req.params.post_id);
     console.log("req.params",req.params);
-
-    var uId = ObjectId(req.params.post_id)
-    db.collection('posts').find({_id: uId}).toArray((err, result) => {
+    //req.params is the request's query paramater
+    var postId = ObjectId(req.params.post_id)
+    db.collection('posts').find({_id: postId}).toArray((err, result) => {
       if (err) return console.log(err)
       res.render('posts.ejs', {
         posts: result
